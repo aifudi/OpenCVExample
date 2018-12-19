@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpencvExample", "OpencvExam
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageProc", "ImageProc\ImageProc.vcxproj", "{E69C360F-7280-4B70-99C0-ACC2D5A4705C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MorpEx", "MorpEx\MorpEx.vcxproj", "{C2721B67-75BA-4390-833B-51EB9BEA6D7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{E69C360F-7280-4B70-99C0-ACC2D5A4705C}.Release|x64.Build.0 = Release|x64
 		{E69C360F-7280-4B70-99C0-ACC2D5A4705C}.Release|x86.ActiveCfg = Release|Win32
 		{E69C360F-7280-4B70-99C0-ACC2D5A4705C}.Release|x86.Build.0 = Release|Win32
+		{C2721B67-75BA-4390-833B-51EB9BEA6D7B}.Debug|x64.ActiveCfg = Debug|x64
+		{C2721B67-75BA-4390-833B-51EB9BEA6D7B}.Debug|x64.Build.0 = Debug|x64
+		{C2721B67-75BA-4390-833B-51EB9BEA6D7B}.Debug|x86.ActiveCfg = Debug|Win32
+		{C2721B67-75BA-4390-833B-51EB9BEA6D7B}.Debug|x86.Build.0 = Debug|Win32
+		{C2721B67-75BA-4390-833B-51EB9BEA6D7B}.Release|x64.ActiveCfg = Release|x64
+		{C2721B67-75BA-4390-833B-51EB9BEA6D7B}.Release|x64.Build.0 = Release|x64
+		{C2721B67-75BA-4390-833B-51EB9BEA6D7B}.Release|x86.ActiveCfg = Release|Win32
+		{C2721B67-75BA-4390-833B-51EB9BEA6D7B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

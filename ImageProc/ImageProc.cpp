@@ -6,6 +6,7 @@
 #include<opencv2/opencv.hpp>
 #include<opencv2/highgui/highgui.hpp>
 #include<opencv2/imgproc/imgproc.hpp>
+#include<opencv2/core/core.hpp>
 
 using namespace std;
 using namespace cv;
@@ -36,6 +37,7 @@ static  void on_BilateralFilter(int, void *);        //双边滤波
 
 int main()
 {
+	system("color 5E");
 	g_srcImage = imread("1.jpg",1);
 	if (!g_srcImage.data)
 	{
@@ -86,6 +88,19 @@ int main()
 	createTrackbar("内核值:", "【<5>双边滤波】", &g_nBilateralFilterValue, 40, on_BilateralFilter);
 	on_BilateralFilter(g_nBilateralFilterValue, 0);
 //-------------------------------------------------------------------
+
+
+//输出一些帮助信息
+    cout << endl << "\t,请调整滚动条观察图像效果！\n\n"
+		<< "\t按下“q”键时，退出程序!\n";
+
+	while (char(waitKey(1)!='q'))
+	{
+		
+	}
+
+	return 0;
+
 }
 
 //---------------------------[on_BoxFilter()函数]-----------------------------
@@ -108,7 +123,7 @@ static  void on_BoxFilter(int, void *)
 static  void on_MeanBlur(int, void *)
 {
 	// 滤波操作
-	blur(g_srcImage, g_dstImage2, Size(g_nBoxFilterValue + 1, g_nBoxFilterValue + 1),Point(-1,-1));
+	blur(g_srcImage, g_dstImage2, Size(g_nMeanBlurValue + 1, g_nMeanBlurValue + 1),Point(-1,-1));
 	// 显示窗口
 	imshow("【<2>均值滤波】", g_dstImage2);
 
